@@ -1,0 +1,133 @@
+{
+    "shoesBox": [
+  
+      {
+        "id": 1,
+        "productName": "Thunder",
+        "price": 99999999,
+        "image": "/assets/Thunder.webp",
+        "wish": false,
+        "cart": false,
+        "order": 0
+      },
+      {
+        "id": 2,
+        "productName": "Freezer",
+        "price": 99999999,
+        "color": "WATER",
+        "image": "./assets/freezer.webp",
+        "wish": false,
+        "cart": false,
+        "order": 0
+      },
+      {
+        "id": 3,
+        "productName": "Fire",
+        "price": 99999999,
+        "color": "FIRE",
+        "image": "./assets/Fire.webp",
+        "wish": false,
+        "cart": false,
+        "order": 0
+      },
+      {
+        "id": 4,
+        "productName": "Arceus",
+        "price": 25255413254,
+        "color": "brown",
+        "image": "./assets/Arceus.webp",
+        "wish": false,
+        "cart": false,
+        "order": 0
+      },
+      {
+        "id": 5,
+        "productName": "Mewtwo",
+        "price":999999999999,
+        "image": "./assets/Mewtwo.webp",
+        "wish": false,
+        "cart": false,
+        "order": 0
+      },
+      {
+        "id": 6,
+        "productName": "Giratina",
+        "price": 2222222222,
+        "image": "./assets/giratina.webp",
+        "wish": false,
+        "cart": false,
+        "order": 0
+      },
+      {
+        "id": 7,
+        "productName": "Charizrd",
+        "price": 2000000,
+        "color": "FIRE",
+        "image": "./assets/Charizard.webp",
+        "wish": false,
+        "cart": false,
+        "order": 0
+      },
+      {
+        "id": 8,
+        "productName": "Magmar",
+        "price": 500000,
+        "color": "FIRE",
+        "image": "./assets/Magmar.webp",
+        "wish": false,
+        "cart": false,
+        "order": 0
+      },
+      {
+        "id": 9,
+        "productName": "Gyarados",
+        "price": 15000000,
+        "color": "WATER",
+        "image": "./assets/Gyarados.webp",
+        "wish": false,
+        "cart": false,
+        "order": 0
+      },
+      {
+        "id": 10,
+        "productName": "Lapras",
+        "price": 10000000,
+        "color": "WATER",
+        "image": "./assets/Lapras.webp",
+        "wish": false,
+        "cart": false,
+        "order": 0
+      },
+      {
+        "id": 11,
+        "productName": "Chikorita",
+        "price": 5000,
+        "color": "GRASS",
+        "image": "./assets/Chikorita.webp",
+        "wish": false,
+        "cart": false,
+        "order": 0
+      },
+      {
+        "id": 12,
+        "productName": "Shaymin",
+        "price": 20000,
+        "color": "GRASS",
+        "image": "./assets/Shaymin.webp",
+        "wish": false,
+        "cart": false,
+        "order": 0
+      },
+      {
+        "id": 13,
+        "productName": "Bellsprout",
+        "price": 300,
+        "color": "GRASS",
+        "image": "./assets/Bellsprout.webp",
+        "wish": false,
+        "cart": false,
+        "order": 0
+      }
+  
+    ]
+  }

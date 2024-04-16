@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pokémol</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header data-include-path="header.html"></header>
+
+    <!-- goods detail-->
+    <main class="detail-page">
+      <div class="detail-container">
+        <div class="detail-goods-photo">
+          <img src="" alt="goods-image" class="detail-photo" />
+        </div>
+        <div class="detail-info-box">
+          <div class="detail-goods">
+            <dl class="detail-info">
+              <dt class="detail-name"></dt>
+              <dd class="detail-price"></dd>
+            </dl>
+            <p class="detail-summary">
+              자세한 문의는 dm 부탁드려요 🙏
+            </p>
+          </div>
+          <div class="detail-info-control">
+            <button type="button" class="control-btn detail-wish">WISH</button>
+            <button type="button" class="control-btn detail-cart">CART</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer data-include-path="footer.html"></footer>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/loadItem.js"></script>
+    <script type="module" src="./js/detailPage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pokémol</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header data-include-path="header.html"></header>
+
+    <!-- landing Page -->
+    <section id="home" class="home">
+      <div class="landing">
+          <img src="./assets/img.jpg" alt="shoes-image" />
+        </div>
+        <div class="landing-desc-box">
+          <div class="sec-top">
+            <h2 class="sec-tit">EIR MAX - APS - 200</h2>
+            <p class="sec-desc">shoes life style</p>
+          </div>
+          <a href="detail.html?8" class="landing-detail-link">More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- new item-->
+    <section id="new" class="new-page">
+      <div class="sec-top new-top">
+        <h1 class="sec-tit new-tit">Legend Pokémon</h1>
+        <p class="sec-desc">Look for Legend Pokémons</p>
+      </div>
+      <ul class="new-box">
+        <li class="new-box-list">
+          <a href="detail.html?1" class="new-item-link">
+            <img
+              src="./assets/Thunder.webp"
+              alt="new goods"
+              class="new-item"
+            />
+          </a>
+        </li>
+        <li class="new-box-list">
+          <a href="detail.html?2" class="new-item-link">
+            <img
+              src="./assets/freezer.webp"
+              alt="new goods"
+              class="new-item"
+              style
+            />
+          </a>
+        </li>
+        <li class="new-box-list">
+          <a href="detail.html?3" class="new-item-link">
+            <img
+              src="./assets/Fire.webp"
+              alt="new goods"
+              class="new-item"
+            />
+          </a>
+        </li>
+        <li class="new-box-list">
+          <a href="detail.html?4" class="new-item-link">
+            <img
+              src="./assets/Arceus.webp"
+              alt="new goods"
+              class="new-item"
+            />
+          </a>
+        </li>
+        <li class="new-box-list">
+          <a href="detail.html?5" class="new-item-link">
+            <img
+              src="./assets/Mewtwo.webp"
+              alt="new goods"
+              class="new-item"
+              style
+            />
+          </a>
+        </li>
+        <li class="new-box-list">
+          <a href="detail.html?6" class="new-item-link">
+            <img
+              src="./assets/Giratina.webp"
+              alt="new goods"
+              class="new-item"
+              style
+            />
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- goods -->
+    <main id="goods" class="goods-page">
+      <div class="sec-top">
+        <h1 class="sec-tit">Type</h1>
+        <p class="sec-desc goods-desc">
+          Choose a Pokémon type</p>
+      </div>
+      <div class="goods-sort">
+        <select name="color-choice" class="goods-item color-item">
+          <option selected>All Type</option>
+          <option
+            data-key="color"
+            data-value="FIRE"
+            class="choice-sort select-red"
+          >
+            FIRE Type
+          </option>
+          <option
+            data-key="color"
+            data-value="WATER"
+            class="choice-sort select-white"
+          >
+            WATER Type
+          </option>
+          <option
+            data-key="color"
+            data-value="GRASS"
+            class="choice-sort select-yellow"
+          >
+           GRASS Type
+          </option>
+        </select>
+      </div>
+      <ul class="goods-container"></ul>
+      <ol class="goods-pagination"></ol>
+    </main>
+
+    <!-- footer -->
+    <footer data-include-path="footer.html"></footer>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/loadItem.js"></script>
+  </body>
+</html>

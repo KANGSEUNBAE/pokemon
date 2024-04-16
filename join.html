@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pokémol-JOIN</title>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+      <div class="top">
+        <nav class="top-nav">
+          <button type="button" class="top-nav-modal">
+            <i class="bx bxs-grid"></i>
+          </button>
+          <a href="index.html" class="top-title">Pokémol</a>
+          <a href="cart.html" class="top-nav-cart">
+            <i class="bx bx-cart"></i>
+            <strong class="top-cart-count count-mobile"></strong>
+          </a>
+          <div class="top-category">
+            <ul class="category-box">
+              <li class="category-item">
+                <a href="index.html#new">Legend</a>
+              </li>
+              <li class="category-item">
+                <a href="index.html#goods">Pokémons</a>
+              </li>
+              <li class="category-item">
+                <a href="login.html">Login</a>
+              </li>
+              <li class="category-item">
+                <div class="top-cart">
+                  <a href="join.html">Join</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      
+    </header>
+
+    <!-- 회원가입 폼 -->
+    <main class="register-form-container">
+        <h1 style="padding-left : 10px;">JOIN</h1>
+        <form style="padding-left : 10px;">
+            <input type="text" placeholder="NAME" required>
+            <br>
+            <input type="email" placeholder="E-MAIL" required>
+            <br>
+            <input type="password" placeholder="PW" required>
+            <Br>
+            <input type="password" placeholder="PW" required>
+            <button type="submit">JOIN</button>
+        </form>
+        <div class="login-link">
+            <br><p style="padding-left : 10px;">
+              Already have an account?
+              <br>
+              <a href="login.html">LOGIN</a></p>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+      <footer data-include-path="footer.html"></footer>
+
+      <script type="module" src="./js/main.js"></script>
+      <script type="module" src="./js/loadItem.js"></script>
+    </body>
+</body>
+</html>
