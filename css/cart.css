@@ -6,8 +6,6 @@
     text-align: center;
     font-size: 2rem;
   }
-  
-  /* cart */
   .cart-page {
     display: flex;
     flex-direction: column;
@@ -15,7 +13,7 @@
     align-items: center;
     padding: 10rem 0;
   }
-  
+
   .cart-container-box {
     width: 100%;
   }
@@ -83,7 +81,6 @@
     text-align: center;
   }
   
-  /* total */
   .cart-page .cart-total {
     width: 80%;
     border-bottom: 1px solid black;
@@ -160,7 +157,6 @@
       font-size: 1.8rem;
     }
   
-    /* total */
     .cart-page .cart-total .total {
       font-size: 1.8rem;
     }

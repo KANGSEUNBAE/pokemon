@@ -34,14 +34,10 @@
   color: white;
   transition: 100ms all ease-out;
 }
-
-/* mobile */
-/* header-nav */
 .top {
   width: 100vw;
   z-index: 1;
 }
-
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -56,19 +52,16 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .top-nav.back-color {
   background-color: white;
   transition: 0.6s;
 }
-
 .top-nav .top-title {
   font-size: 3.5rem;
   position: relative;
   top: 0.3rem;
   font-weight: 700;
 }
-
 .top-nav .top-nav-modal {
   background: transparent;
   border: none;
@@ -77,14 +70,12 @@
   position: relative;
   top: 0.3rem;
 }
-
 .top-nav .top-nav-cart {
   font-size: 2.5rem;
   padding: 0.5rem;
   position: relative;
   top: 0.3rem;
 }
-
 .top-nav .top-nav-cart .count-mobile {
   position: absolute;
   width: 1.8rem;
@@ -92,11 +83,9 @@
   top: -1px;
   right: 0;
 }
-
 .top-nav .top-category {
   display: none;
 }
-
 .top-nav-category {
   background-color: rgba(26, 25, 25, 0.87);
   width: 70%;
@@ -107,11 +96,9 @@
   transition: 0.4s;
   z-index: 1;
 }
-
 .top-nav-category.open {
   left: 0;
 }
-
 .top-nav-category .category-close {
   position: absolute;
   top: 20px;
@@ -121,29 +108,23 @@
   border: none;
   font-size: 1.8rem;
 }
-
 .top-nav-category .category-box {
   margin-top: 100px;
 }
-
 .top-nav-category .category-item {
   font-size: 1.5rem;
   list-style: none;
   text-align: center;
 }
-
 .top-nav-category .category-item a {
   display: block;
   width: 100%;
   padding: 1em 0;
   color: white;
 }
-
-/* section-landing */
 .home {
   height: 100vh;
 }
-
 .landing {
   display: flex;
   height: inherit;
@@ -152,24 +133,20 @@
   justify-content: center;
   overflow: hidden;
 }
-
 .landing .landing-image-box {
   position: relative;
   top: 2rem;
 }
-
 .landing .landing-image-box img {
   display: block;
   height: 60rem;
   transform: rotate(-28deg);
 }
-
 .landing .landing-desc-box {
   text-align: center;
   position: absolute;
   bottom: 5rem;
 }
-
 .landing-desc-box .landing-detail-link {
   display: block;
   padding: 1rem;
@@ -180,8 +157,6 @@
   border-radius: 5px;
   margin: 0 auto;
 }
-
-/* section-new */
 .new-page {
   display: flex;
   flex-direction: column;
@@ -239,25 +214,19 @@
   position: relative;
   top: 22px;
 }
-
-/* section-goods */
 .goods-page {
   padding: 8rem 3.5rem;
 }
-
 .goods-page .sec-top {
   margin-bottom: 2rem;
 }
-
 .goods-page .sec-top .goods-desc {
   font-size: 2.2rem;
 }
-
 .goods-page .goods-sort {
   margin-bottom: 5rem;
   text-align: center;
 }
-
 .goods-page .goods-sort .goods-item {
   background-color: black;
   color: white;
@@ -268,7 +237,6 @@
   height: 2rem;
   font-size: 1.8rem;
 }
-
 .goods-page .goods-container {
   display: flex;
   justify-content: center;
@@ -276,8 +244,7 @@
   flex-flow: wrap;
 }
 
-.goods-card {
-  padding: 2rem;
+.goods-card { padding: 2rem;
   background-color: rgb(241, 241, 241);
   border-radius: 10px;
   margin-bottom: 3.5rem;
@@ -318,8 +285,6 @@
 .card-info .card-precis .card-icon {
   margin-left: 1rem;
 }
-
-/* section-goods-pagination */
 .goods-page .goods-pagination {
   display: flex;
   justify-content: center;
@@ -332,7 +297,6 @@
   text-align: center;
   width: 2.7rem;
 }
-
 .active {
   color: white;
   background-color: black;
@@ -342,8 +306,6 @@
 .page-list + .page-list {
   margin-left: 3rem;
 }
-
-/* footer */
 .info-page {
   background-color: black;
   height: 23rem;
@@ -381,30 +343,18 @@
 .footer-tit {
   font-weight: bold;
 }
-
 .info-page .inner-copyright {
   color: white;
   font-size: 1.3rem;
   text-align: center;
 }
-
-/* iPhone 5 */
-@media only screen and (max-width: 375px) {
-  .sec-top .sec-tit {
-    font-size: 2.7rem;
-    margin-bottom: 1rem;
-  }
-
   .sec-top .sec-desc {
     font-size: 2.4rem;
   }
 
-  /* header-nav */
   .top-nav .top-title {
     font-size: 2.8rem;
   }
-
-  /* section-landing */
   .landing .landing-image-box img {
     height: 50rem;
   }
@@ -413,7 +363,6 @@
     font-size: 2.8rem;
   }
 
-  /* section-new */
   .landing .landing-image-box {
     left: -2rem;
   }
@@ -421,17 +370,12 @@
     width: 15rem;
   }
 
-  /* section-goods */
   .goods-page .sec-top .goods-desc {
     font-size: 1.7rem;
   }
-
-  /* pagination */
   .page-list + .page-list {
     margin-left: 1.8rem;
   }
-
-  /* footer */
   .info-page .inner-info-box {
     font-size: 1.2rem;
   }
@@ -439,20 +383,7 @@
   .info-page .inner-copyright {
     font-size: 1.1rem;
   }
-}
 
-/* 768px - 1024px */
-@media only screen and (min-width: 768px) {
-  .sec-top .sec-tit {
-    font-size: 5rem;
-    margin-bottom: 1rem;
-  }
-
-  .sec-top .sec-desc {
-    font-size: 4rem;
-  }
-
-  /* header-nav */
   .top-nav {
     padding: 2rem;
   }
@@ -501,8 +432,6 @@
   .top-nav .top-nav-cart {
     display: none;
   }
-
-  /* section-landing */
   .landing .landing-image-box {
     top: -5rem;
     left: -7rem;
@@ -521,7 +450,6 @@
     font-size: 3rem;
   }
 
-  /* section-new */
   .new-box .new-box-list {
     width: 28rem;
     height: 28rem;
@@ -531,8 +459,6 @@
   .new-box-list .new-item-link .new-item {
     top: 40px;
   }
-
-  /* section-goods */
   .goods-page .sec-top .goods-desc {
     font-size: 4rem;
   }
@@ -558,7 +484,6 @@
     top: 2px;
     font-size: 2.5rem;
   }
-  /* footer */
   .info-page {
     height: 30rem;
   }
@@ -570,9 +495,7 @@
   .info-page .inner-copyright {
     font-size: 2.1rem;
   }
-}
 
-/* desktop */
 @media only screen and (min-width: 1025px) {
   .sec-top .sec-tit {
     font-size: 4rem;
@@ -581,7 +504,6 @@
   .sec-top .sec-desc {
     font-size: 3rem;
   }
-  /* header-nav */
   .top-nav {
     padding: 1rem;
   }
@@ -599,7 +521,6 @@
     margin-right: 6rem;
   }
 
-  /* section-landing */
   .landing .landing-image-box {
     top: 0rem;
   }
@@ -613,8 +534,6 @@
     background: none;
     color: black;
   }
-
-  /* section-new */
   .new-page {
     padding: 10rem 0;
   }
@@ -623,7 +542,6 @@
     display: none;
   }
 
-  /* section-goods */
   .card-info .card-precis .card-icon {
     top: 3px;
     font-size: 2.5rem;
@@ -646,8 +564,6 @@
   .goods-container .goods-card {
     width: 28%;
   }
-
-  /* footer */
   .info-page {
     height: 23rem;
   }

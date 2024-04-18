@@ -1,4 +1,3 @@
-//top-nav / slide sidebar menu
 function slideMenuHandler(e) {
     const slideOpenBtn = document.querySelector(".top-nav-modal");
     const slideCloseBtn = document.querySelector(".category-close");
@@ -16,8 +15,6 @@ function slideMenuHandler(e) {
   }
   
   window.addEventListener("click", slideMenuHandler);
-  
-  //New Item / horizontal-scroll
   function newItemWheel(e) {
     const newListBox = document.querySelector(".new-box");
   
@@ -32,8 +29,6 @@ function slideMenuHandler(e) {
   }
   
   window.addEventListener("wheel", newItemWheel);
-  
-  //top-nav / scroll detect
   function scrollControll() {
     const topNav = document.querySelector(".top-nav");
     const topScroll = document.documentElement.scrollTop;

@@ -8,7 +8,6 @@ const detialWishBtn = document.querySelector(".detail-wish");
 const detialCartBtn = document.querySelector(".detail-cart");
 const detialBtnBox = document.querySelector(".detail-info-control");
 
-//load detail goods
 export function loadDetail(shoesBox) {
   let url = location.search;
   let params = url.substring(url.indexOf("?") + 1, url.length);

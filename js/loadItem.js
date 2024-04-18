@@ -7,7 +7,6 @@ import {
   import { loadWish, paintWishPage, saveWishGoods } from "./wishList.js";
   import { loadDetail } from "./detailPage.js";
   
-  //header, footer markup data include
   async function asyncMarkupData() {
     const allElements = document.getElementsByTagName("*");
     Array.prototype.forEach.call(allElements, function (el) {
@@ -25,7 +24,6 @@ import {
     });
   }
   
-  //localStrage에 wish/cart goods가 존재하는지 체크
   function storageCheck(json, saveGoods, mode) {
     if (saveGoods) {
       for (let i = 0; i < json.shoesBox.length; i++) {
@@ -38,7 +36,6 @@ import {
     }
   }
   
-  //JSON fetch
   async function loadItems() {
     const response = await fetch("./data/data.json");
     const json = await response.json();
@@ -47,12 +44,10 @@ import {
     return json.shoesBox;
   }
   
-  //list 출력
   function displayItems(shoesBox, currentPageNum) {
     const itemContainer = document.querySelector(".goods-container");
     const pageBtns = document.querySelectorAll(".page-btn");
   
-    //data slice
     let dataPerPage = 6;
     let startIndexItem = currentPageNum - 1;
   
@@ -61,14 +56,12 @@ import {
       dataPerPage * currentPageNum
     );
   
-    //data print
     if (itemContainer !== null) {
       itemContainer.innerHTML = pageShowBox
         .map((shoes) => createHTML(shoes))
         .join("");
     }
-  
-    //pageBtn active
+
     pageBtns.forEach((pageBtn) => {
       const pageNum = parseInt(pageBtn.innerHTML);
       if (pageNum === currentPageNum) {
@@ -79,7 +72,6 @@ import {
     });
   }
   
-  //createHTML
   export function createHTML(shoes) {
     return `
       <li class="goods-card">
@@ -111,7 +103,6 @@ import {
   `;
   }
   
-  //pagination paint
   function pagination(shoesBox) {
     const pageContainer = document.querySelector(".goods-pagination");
   
@@ -146,7 +137,6 @@ import {
     displayItems(shoesBox, currentPage);
   }
   
-  //pagination - html
   function paginationHTML(num) {
     return `
     <li class="page-list">
@@ -155,7 +145,6 @@ import {
     `;
   }
   
-  //user selected color
   function selectHandler(shoesBox) {
     const sortContainer = document.querySelector(".goods-sort");
     if (sortContainer !== null) {
@@ -165,7 +154,6 @@ import {
     }
   }
   
-  //color filtering
   function selectColorFilter(e, shoesBox) {
     const choiceSortBox = e.target;
     const userChoiceColor =
@@ -177,8 +165,6 @@ import {
     loadCart(userSelect);
     loadWish(userSelect);
   }
-  
-  //main
   asyncMarkupData()
     .then(() => {
       return loadItems();

@@ -4,17 +4,13 @@ import { createHTML } from "./loadItem.js";
 const wishContainer = document.querySelector(".wish-container");
 const wishEmpty = document.querySelector(".empty");
 
-//wish-storage
 export let saveWishGoods = localStorage.getItem("wishList")
   ? JSON.parse(localStorage.getItem("wishList"))
   : [];
 
-//save wish
 export function saveWish(saveWishGoods) {
   localStorage.setItem("wishList", JSON.stringify(saveWishGoods));
 }
-
-// wish-page paint
 export function paintWishPage(shoesBox) {
   const loadWishGoods = localStorage.getItem("wishList");
   if (wishContainer !== null) {
@@ -28,8 +24,6 @@ export function paintWishPage(shoesBox) {
   loadWish(shoesBox);
   loadCart(shoesBox);
 }
-
-//delete wish list
 function deletWish(cleanWish) {
   if (wishContainer !== null) {
     wishContainer.removeChild(wishContainer.children[cleanWish]);
@@ -38,8 +32,6 @@ function deletWish(cleanWish) {
     }
   }
 }
-
-//wish goods
 export function loadWish(shoesBox) {
   const likebtns = document.querySelectorAll(".like-icon");
   likebtns.forEach((likebtn) => {
